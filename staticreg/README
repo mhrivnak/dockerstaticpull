@@ -1,0 +1,9 @@
+The goal is for docker to be able to "pull" fron static files arranged in the
+v2 API layout. This image serves said files for repository "dockerio/busybox".
+There are still some problems, but you can try it yourself by:
+
+$ docker run -d -p 8080:80 mhrivnak/staticreg
+
+$ docker pull localhost:8080/dockerio/busybox
+
+
